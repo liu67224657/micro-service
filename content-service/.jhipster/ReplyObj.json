@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "replyUniqueId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "32",
+            "fieldValidateRulesMaxlength": "32"
+        },
+        {
+            "fieldName": "destId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "replyType",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "agreeSum",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170908081117",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "reply_obj",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pager",
+    "microserviceName": "contentService",
+    "searchEngine": false
+}

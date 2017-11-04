@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <!--<include file="classpath:config/liquibase/changelog/20170619042034_added_entity_CommentRating.xml" relativeToChangelogFile="false"/>-->
+    <include file="classpath:config/liquibase/changelog/20170619070336_added_entity_GameComment.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170512040745_added_entity_ContentTag.xml" relativeToChangelogFile="false"/>
+    <!--<include file="classpath:config/liquibase/changelog/20170622033406_added_entity_Feedback.xml" relativeToChangelogFile="false"/>-->
+    <!--<include file="classpath:config/liquibase/changelog/20170623085800_added_entity_UserCommentSum.xml" relativeToChangelogFile="false"/>-->
+    <!--<include file="classpath:config/liquibase/changelog/20170711083002_added_entity_CommentOperation.xml" relativeToChangelogFile="false"/>-->
+    <include file="classpath:config/liquibase/changelog/20170711083003_added_entity_GameCommentOperation.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170620032042_added_entity_GameTag.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170620080441_added_entity_Game.xml" relativeToChangelogFile="false"/>
+
+
+    <!--<include file="classpath:config/liquibase/changelog/20170620080441_added_entity_Game.xml" relativeToChangelogFile="false"/>-->
+    <include file="config/liquibase/changelog/20170908033514_added_entity_Reply.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20170908081117_added_entity_ReplyObj.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>
+

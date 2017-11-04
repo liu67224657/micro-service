@@ -1,0 +1,82 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "uid",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "parentId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "parentUid",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "rootId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "rootUid",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "body",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pic",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createTime",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "validStatus",
+            "fieldType": "Com.enjoyf.platform.common.domain.enumeration.ValidStatus",
+            "fieldValues": "ORDINAL",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "replyType",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "destId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "replyObjId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "32",
+            "fieldValidateRulesMaxlength": "32"
+        }
+    ],
+    "changelogDate": "20170908033514",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "reply",
+    "jpaMetamodelFiltering": false,
+    "pagination": "infinite-scroll",
+    "microserviceName": "contentService",
+    "searchEngine": false
+}
